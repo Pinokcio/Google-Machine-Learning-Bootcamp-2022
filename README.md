@@ -1,5 +1,6 @@
 # Google-Machine-Learning-Bootcamp-2022
-<ins>Just my study log</ins>
+
+https://heesungu.notion.site/TensorFlow-for-AI-ML-DL-2c9743e81696418d8f0189a90f1310b7
 
 1. 머신러닝 이론 과정 수료
 
