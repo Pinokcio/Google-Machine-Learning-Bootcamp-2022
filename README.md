@@ -31,6 +31,7 @@
 - 모든 데이터를 사용하고싶은 욕심때문에 valid set 설정을 안했더니 제출결과가 오락가락해서 다시 설정하였다.
 - time series 문제에서 lstm을 사용하여 문제를 푸는데 output의 형식이 맞지 않아 오류가 발생했다. lstm의 return_sequnece를 잘못설정해서 발생한 문제였다.
 - 2번문제의 테스트케이스가 가끔 4/5로 나오는것을 제외하고는 5/5로 시험을 마감했다.
+- Tensorflow를 활용하는데 있어 기초를 다잡고, 자격증 취득 자체에는 모델링할 때 자신감을 준다는 장점이 있는 것 같다.
 
 ### <Kaggle 대회 참가>
 [Paddy Doctor: Paddy Disease Classification](https://www.kaggle.com/competitions/paddy-disease-classification/overview)에 참가하였다.
@@ -41,7 +42,7 @@ https://github.com/Pinokcio/Google-Machine-Learning-Bootcamp-2022/blob/main/Kagg
 - InceptionV3 : 속도는 빠르나 accuracy가 낮음
 - efficientNet : 속도도 준수하고 accuracy도 괜찮게 나옴. B2, B4, V2S, V2L 등의 모델을 다양하게 사용함
 - SwinTransformer : 속도는 비교적 느리나 accuracy가 괜찮게 나옴. 메모리 사용량이 높은 관계로 batch size를 낮게 설정함
-- 위 모델들 중 성능이 괜찮게 나온 모델들에 대해 soft voting을 실행하여 결과로 제출함 
+- 위 모델들 중 성능이 괜찮게 나온 모델들에 대해 soft voting을 실행하여 결과로 제출했다.
 - 결과 : public 25% / private 31%
 - [기록](https://www.notion.so/heesungu/paddy-disease-prediction-32c5c03938744156a768e5321134729a)
 
