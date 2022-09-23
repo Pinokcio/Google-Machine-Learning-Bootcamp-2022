@@ -1,46 +1,52 @@
 # Google-Machine-Learning-Bootcamp-2022
 
-https://heesungu.notion.site/TensorFlow-for-AI-ML-DL-2c9743e81696418d8f0189a90f1310b7
+구글 ML 부트캠프의 기록 ( 2022/06/15 ~ 2022/09/15 )
 
-1. 머신러닝 이론 과정 수료
+### <Coursera 강의 수강>
+- [Deep Learning Specialization (Coursera)](https://www.notion.so/heesungu/Deep-Learning-Specialization-b1666dabf20f47feaab59131528d7842)
+  - 머신러닝 학습 과정을 기초단계부터 설명해준다.
+  - Optimization, Regularization, Hyperparameter tuning 등을 다룬다.
+  - ML project의 과정을 목표 설정 단계부터 피드백 단계까지 다루며, 그 사이 여러 방법들을 제시한다. 
+  - Computer Vision의 기초를 다룬다.
+  - NLP의 기초를 다룬다.
+- [Tensorflow for AL/ML/DL (Coursera)](https://www.notion.so/heesungu/TensorFlow-for-AI-ML-DL-2c9743e81696418d8f0189a90f1310b7)
+  - Tensorflow의 기초를 설명한다.
+  - Computer Vision 문제를 다룰 때 사용되는 여러 함수 및 다양한 방법론을 다룬다.
+  - NLP 문제를 다룰 때 사용되는 여러 합수 및 다양한 방법론을 다룬다.
+  - Time Series Data를 다루며 CNN과 RNN 등을 이용하여 Prediction하는 방법을 설명한다.
 
-구글 브레인 팀의 창립멤버 중 한사람이며 Coursera의 창업가이기도 한 Andrew Ng교수가 동료들과 함께 만든 딥러닝 전문 과정입니다. 5개의 코스로 구성되어 있으며 전문 지식에 대한 강의뿐 아니라 업계 리더들의 경험과 조언을 들을 수 있습니다.
+후기 : 
+- 강의에서는 부트캠프를 시작하기 이전부터 알고 있던 내용을 상당수 다루었다. 그만큼 기초적인 내용이 대부분이라고 할 수 있다. 하지만 들으면서 그간 알았던 지식들의 깊이가 얕았구나라는 느낌을 받았다. 
+- layer를 쌓고 각 layer가 어떤 기능을 하는지는 알고 있었지만 그 layer를 tensorflow나 pytorch와 같은 워크프레임 없이는 구현해본적도 없고 구현할수도 없었다. 하지만 이 강의에서는 그런 내용을 다룬다. regularization이나 optimization를 포함한 학습 과정 또한 forward, back propagation을 직접 계산하며 하나하나 집고 넘어간다. 
+- 하이퍼파라미터 튜닝은 ML 개발에서 가장 중요하다고도 볼 수 있지만 그 과정은 경험적이니 직접 해보라는 말을 들을 때가 많았다. 그렇기때문에 항상 시작이 애매했는데 이 강의에서는 그러한 가이드라인을 제시해준다. 직접 다양한 하이퍼파라미터를 설정하도록 하고 그 변화를 보는 방법을 알려줌으로써 해석의 눈을 기를 수 있었다.
+- 습관처럼 train/dev/test set을 나누지만 각 크기를 나누고 해석하며 피드백까지 이어지기는 어려웠다. 이 강의에서는 그러한 경험까지 공유해주며 모델 개선 방향을 제시해주었다. 
+- 이외에도 다양한 모델 및 함수의 활용을 배우고 ML 엔지니어로서의 기초를 다지는데 큰 도움이 됐다.
 
+### <Tensorflow Developer Certificate 자격증 취득>
+![TensorFlow_Developer_Certificate_유희성](https://user-images.githubusercontent.com/28750225/191905028-c7e6b6f7-7194-4c0c-8ef6-f63a2a8ecc7a.PNG)
 
-2. 머신러닝 관련 자격증 획득
-TensorFlow certification
+후기 :
+- Coursera 강의를 베이스로 3~4일정도의 준비기간 후 시험을 봤다.
+- 간단한 regression, cnn, rnn, lstm, time series 문제가 나왔다.
+- 모든 데이터를 사용하고싶은 욕심때문에 valid set 설정을 안했더니 제출결과가 오락가락해서 다시 설정하였다.
+- time series 문제에서 lstm을 사용하여 문제를 푸는데 output의 형식이 맞지 않아 오류가 발생했다. lstm의 return_sequnece를 잘못설정해서 발생한 문제였다.
+- 2번문제의 테스트케이스가 가끔 4/5로 나오는것을 제외하고는 5/5로 시험을 마감했다.
 
-TensorFlow를 활용하여 딥러닝 및 머신러닝(ML) 문제를 해결할 수 있는 능력을 입증할 수 있는 자격증입니다. 자격증 취득 준비와 관련하여 TensorFlow Developer Professional Certificate 강의를 제공합니다. 
+### <Kaggle 대회 참가>
+[Paddy Doctor: Paddy Disease Classification](https://www.kaggle.com/competitions/paddy-disease-classification/overview)에 참가하였다.
 
-GCP Professional Data Engineer certification
+https://github.com/Pinokcio/Google-Machine-Learning-Bootcamp-2022/blob/main/Kaggle/Paddy_disease_prediction.ipynb
 
-데이터 처리 시스템, 설계 데이터 처리, 시스템 구축 및 운영 기계 학습 모델 운영, 솔루션 품질 보장 같은 능력을 평가하는 자격증입니다.
+- 학습데이터가 꽤 많았기 때문에 학습환경과 시간을 생각했을 때, 가벼운 모델을 사용하는 것이 좋겠다고 판단하였다.
+- InceptionV3 : 속도는 빠르나 accuracy가 낮음
+- efficientNet : 속도도 준수하고 accuracy도 괜찮게 나옴. B2, B4, V2S, V2L 등의 모델을 다양하게 사용함
+- SwinTransformer : 속도는 비교적 느리나 accuracy가 괜찮게 나옴. 메모리 사용량이 높은 관계로 batch size를 낮게 설정함
+- 위 모델들 중 성능이 괜찮게 나온 모델들에 대해 soft voting을 실행하여 결과로 제출함 
+- 결과 : public 25% / private 31%
+- [기록](https://www.notion.so/heesungu/paddy-disease-prediction-32c5c03938744156a768e5321134729a)
 
-GCP Professional ML Engineer certification
+[2022 september TPS](https://www.kaggle.com/competitions/tabular-playground-series-sep-2022/overview)에 참가하였다.
 
-프레임 문제, 솔루션 설계, 데이터 준비 및 처리, 모델 개발, 파이프라인 자동화 및 솔루션 모니터링 최적화, 유지 등을 평가하는 자격증입니다.
+https://github.com/Pinokcio/Google-Machine-Learning-Bootcamp-2022/blob/main/Kaggle/TPS2022SEP.ipynb
 
-
-3. 프로젝트 실습
-
-캐글은 전 세계 데이터 과학자가 모여 자신의 실력을 겨루고 상금과 명성을 얻는 경진 대회 플랫폼입니다. 캐글의 컴피티션에 참여하여 실전 혹은 실전에 가까운 사례를 경험하면서 딥러닝 특화과정과 머신러닝 자격증 수료를 통해 쌓은 실력을 확인할 수 있습니다. 
-
-캐글 내의 커뮤니케이션은 영어로 진행됩니다.
-프로젝트 참여에 필요한 멤버, 데이터, 주제 등은 개인이 주도해야 합니다.
-본 과정을 수료한 사람에게는 소정의 기념품을 제공합니다. 
-
-
-4. 머신러닝 회사와의 네트워크 형성 및 취업 연계
-스스로 공부할 수 있는 교육과정 이외에도 머신러닝 개발자로서의 미래를 잘 설계할 수 있도록, 이 프로그램에서 머신러닝 개발자를 찾고 싶어하는 국내  IT회사들과 함께 Tech Talk, Career Talk, Meet up 등 현장에서 일어나는 생생한 이야기를 전할 예정입니다. 
-
-Tech Talk: 참가회사들이 직접 회사의 기술을 소개하고 개발 현장의 이야기를 전달합니다. 어떤 사람들이 어떤 환경에서 일하고 있는지 간접적으로 접하며 지원할 회사에 대해 알아 갈 수 있는 의미 있는 시간이 될 것입니다.
-
-Career Talk/Resume Clinic: 취업/이직을 준비하면서 마주하는 난관 중에 하나가 포트폴리오를 어떻게 쌓느냐 하는 것 일 것입니다. 참가자들의 단기적인 스펙쌓기가 아닌 장기적으로 커리어를 어떻게 설계하고 어떤 방식으로 표현하면 좋을지 관련 전문가들의 조언을 듣는 시간이 될 것 입니다.
-
-Meetup: 머신러닝 부트캠프에서 제안하는 교육과정의 전문가, 머신러닝 개발 전문가 그리고 함께 참가하고 있는 동료들과의 다양한 만남을 통해 소통하며 평소 궁금했던 것들을 해결하고 새로운 영감을 얻는 시간이 될 것입니다. 
-
- 
-
-프로그램 일정
-
-![image](https://user-images.githubusercontent.com/28750225/173504837-edd97683-b02a-4359-9ef9-390d7594d6cb.png)
+- [기록](https://www.notion.so/heesungu/2022-Sep-TPS-kaggle-b23397c7e3bb4b138a6e3fbe10aca140)
